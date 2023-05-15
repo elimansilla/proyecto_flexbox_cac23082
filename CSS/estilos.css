@@ -1,0 +1,236 @@
+/* esto es un comentario que puede ser multilinea de ser necesario */
+
+/* sintaxis basica :
+
+selector {
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+    etc.
+ hay 3 selectores principales
+
+ de etiqueta
+            de clase llamando con .
+                    de ID llamando con #
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* reseteo de valores */
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
+}
+
+.header {
+    height: 100vh;
+}
+
+.navegacionHeader {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(53, 58, 64);
+    height: 12vh;
+
+}
+
+.contenedorLogo {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+.contenedorLogo img {
+    width: 35%
+}
+
+.contenedorLogo h2 {
+    color: white
+}
+
+.navHome {
+    width: 50%;
+}
+
+.navHome ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.linkNav {
+    text-decoration: none;
+    padding-left: 1rem;
+    color: white;
+}
+
+#botonCompra {
+    color: rgb(41, 167, 68);
+}
+
+.contenedorConferencia {
+    background: linear-gradient(to right, #00000085, #00000085), url(../assets/img/hawaii.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navConferencia {
+    width: 45%;
+    height: 40%;
+    text-align: right;
+    line-height: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    padding-right: 10rem;
+} 
+
+.navConferencia h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.botonConferencia {
+    display: inline-block;
+}
+
+.sectionOradores {
+    background-color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sectionOradores h2 {
+    font-size: 2rem;
+    line-height: 1.5rem;
+}
+
+.oradores {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 1rem;
+}
+
+.card {
+    width: 30%;
+}
+
+.card img {
+    background-color: white;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.lugarFecha {
+    height: 60vh;
+    display: flex;
+}
+
+.cardLugar {
+    width: 50%;
+}
+
+.cardLugar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textoLugar {
+    width: 50%;
+    background-color: rgb(53, 58, 64);
+    color: white;
+    line-height: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.contenedorFormulario {
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputFormulario {
+    width: 100%;
+    padding: 7px;
+    margin: 7px;
+}
+
+textarea {
+    width: 800px;
+}
+
+.footer {
+    height: 12vh;
+    background-image: linear-gradient(to right, #1c3643, #1c3c4d, #1c4357, #1d4962, #1e4f6d);
+}
+
+.navFooter {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listaFooter {
+    width: 80%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linkFooter {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .navegacionHeader {
+        flex-flow: column wrap;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+}
